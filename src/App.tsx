@@ -1,14 +1,37 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+// import { Route, Routes } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+// import ScrollToTop from "./components/ScrollToTop";
+
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Experience from "./pages/Experience";
+// import Solutions from "./pages/Solutions";
+// import Achievements from "./pages/Achievements";
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1 className="text-3xl font-bold">Julie Tunstill</h1>
+      <div className="flex min-h-screen w-full flex-col bg-stone-50 text-stone-800">
+        <Navbar />
+
+        <main className="flex-1">
+          {/* <Routes> */}
+            {/* <Route path="/" element={<Home />} /> */}
+            {/* <Route path="/about" element={<About />} /> */}
+            {/* <Route path="/experience" element={<Experience />} /> */}
+            {/* <Route path="/solutions" element={<Solutions />} /> */}
+            {/* <Route path="/achievements" element={<Achievements />} /> */}
+            {/* <Route path="/contact" element={<Contact />} /> */}
+          {/* </Routes> */}
+        </main>
+
+        <Footer />
+        
+        {/* <ScrollToTop /> */}
+      </div>
     </>
   )
 }
