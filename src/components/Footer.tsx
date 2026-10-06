@@ -6,19 +6,19 @@ export default function Footer() {
 
     const tooltipClass =
         "pointer-events-none absolute bottom-full left-1/2 mb-2 -translate-x-1/2 " +
-        "whitespace-nowrap rounded bg-rose-900 px-2 py-1 text-xs text-rose-100 " +
+        "whitespace-nowrap rounded bg-blue-900 px-2 py-1 text-xs text-blue-100 " +
         "opacity-0 shadow-lg transition-opacity group-hover:opacity-100 " +
         "group-focus-visible:opacity-100";
 
     const linkClass =
-        "group relative inline-flex text-xl transition-colors hover:text-rose-300";
+        "group relative inline-flex text-xl transition-colors hover:text-blue-300";
 
     return (
         <>
-            <footer className="w-full border-t border-rose-900 bg-rose-950">
-                <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-6 text-sm text-stone-400 md:flex-row md:items-center md:justify-between">
+            <footer className="w-full border-t border-blue-900 bg-blue-950">
+                <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-6 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
                     <div>
-                        <p className="font-medium text-stone-200">
+                        <p className="font-medium text-slate-200">
                             Julie Tunstill
                         </p>
                         <p>Technology Sales Professional</p>
@@ -31,7 +31,7 @@ export default function Footer() {
                             rel="noopener noreferrer"
                             className={linkClass}
                         >
-                            <div className="text-rose-300 transition group-hover:text-rose-200">
+                            <div className="text-blue-300 transition group-hover:text-blue-200">
                                 <FaLinkedin />
                             </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
                             download
                             className={linkClass}
                         >
-                            <div className="text-rose-400 transition group-hover:text-rose-300">
+                            <div className="text-blue-400 transition group-hover:text-blue-300">
                                 <HiOutlineDocumentArrowDown />
                             </div>
 
@@ -54,7 +54,7 @@ export default function Footer() {
                             </span>
                         </a>
 
-                        <span className="text-stone-500">
+                        <span className="text-slate-500">
                             © {currentYear} Julie Tunstill
                         </span>
                     </div>
